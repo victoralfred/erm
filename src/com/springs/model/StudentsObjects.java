@@ -1,10 +1,26 @@
 package com.springs.model;
 
-import org.springframework.stereotype.Component;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-@Component("studentsObjects")
+
+@Entity
 public class StudentsObjects {
-	private String id,firstname,middlename,lastname,email;
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private String id;
+
+    @Column(nullable = false)
+	private String firstname;
+    @Column(nullable = false)
+	private String middlename;
+    @Column(nullable = false)
+	private String lastname;
+    @Column(nullable = false)
+	private String email;
 
 	/**
 	 * @return the id
