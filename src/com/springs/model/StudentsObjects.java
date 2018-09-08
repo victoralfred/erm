@@ -1,25 +1,16 @@
 package com.springs.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
-
-@Entity
 public class StudentsObjects {
-	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private String id;
 
-    @Column(nullable = false)
+	private String id;
+	@NotNull(message="Can not be null or empty")
+	@Size(min=1, max =15, message="is required")
 	private String firstname;
-    @Column(nullable = false)
 	private String middlename;
-    @Column(nullable = false)
 	private String lastname;
-    @Column(nullable = false)
 	private String email;
 
 	/**

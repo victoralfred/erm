@@ -8,8 +8,9 @@
    </div>
     <div class="form-row">
        <div class="form-group col-md-3">
-         <label for="jsfirstname">First Name</label>
+         <label for="firstname">First Name</label><span class="text-danger">*</span>
           <form:input path="firstname" class="form-control mx-sm-3 mb-2" type="text" id="jsfirstname" aria-describedby="jsfirstname" placeholder="First Name"/>
+          <form:errors path="firstname" class="alert alert-danger"/>
         </div>
    </div>
    <div class="form-row">
