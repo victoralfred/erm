@@ -9,7 +9,9 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 import org.postgresql.Driver;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 
 
 @Configuration
@@ -33,5 +35,9 @@ public class BenDefinitions {
 	            }
 	    }
 	}
+	   @Bean
+	   public PersistenceExceptionTranslationPostProcessor exceptionTranslation(){
+	      return new PersistenceExceptionTranslationPostProcessor();
+	   }
 
 }

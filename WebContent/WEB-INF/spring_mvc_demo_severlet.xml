@@ -37,7 +37,7 @@
 <props>
 <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
 <prop key="hibernate.temp.use_jdbc_metadata_defaults">false</prop>
-<prop key="spring.jpa.hibernate.ddl-auto=none">true</prop> 
+<prop key="hibernate.hbm2ddl.auto">update</prop> 
 </props>
 </property>
 </bean>
@@ -59,6 +59,10 @@
 		<property name="suffix" value=".jsp"/>
 		<property name="order"  value="0"/>
 	</bean>
-
+<!-- Load Custom Error messages -->
+<bean id="messageSource"
+class="org.springframework.context.support.ResourceBundleMessageSource">
+<property name="basenames" value="resources/customerrorhandler" />
+</bean>
 
 </beans>

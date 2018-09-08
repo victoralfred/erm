@@ -4,5 +4,7 @@
 <%@ include file="registration.jsp" %>
 </div>
 </div>
+<script src="${pageContext.request.contextPath}/resources/js/bootstrap/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/style.js"></script>
 </body>
 </html>
