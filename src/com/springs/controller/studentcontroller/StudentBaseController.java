@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.springs.controller.studentcontroller.services.DAO.interfac.StudentsDAO;
-import com.springs.model.StudentsObjects;
+import com.springs.model.students.StudentsObjects;
 
 @Controller
 @RequestMapping("/students")

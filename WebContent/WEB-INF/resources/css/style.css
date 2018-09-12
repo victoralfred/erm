@@ -1,0 +1,14 @@
+.basecolor{
+	background-color:#039be5;
+	overflow: hidden;
+    background-color: #333;
+}
+.light{
+	background-color:#63ccff;
+}
+.dark{
+	background-color:#006db3;
+}
+.white{
+	color:#ffffff
+}

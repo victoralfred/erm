@@ -1,12 +1,14 @@
-package com.springs.model;
+package com.springs.model.students;
 
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.validation.constraints.NotNull;
 
 import javax.validation.constraints.Size;
@@ -14,7 +16,7 @@ import javax.validation.constraints.Size;
 import org.springframework.stereotype.Component;
 
 
-@Entity(name="students_user")
+@Entity(name="students_details")
 @Component
 public class StudentsObjects {
   
@@ -25,26 +27,32 @@ public class StudentsObjects {
 //	@Min(value=6, message="Must be a value greater than 1")
 //	@Max(value=10, message="Must be a value lesser than 15")
 	private Long id;
-	
-	@Column()
+    @OneToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name="uniqueId")
+  	private Students uniqueId;
+    
+	@Column(name="first_name")
 	@NotNull(message="Can not be null or empty")
 	@Size(min=1, max =15, message="is required")
 	private String firstname;
-	@Column()
+	@Column(name="middle_name")
 	private String middlename;
-	@Column()
+	@Column(name="last_name")
 	private String lastname;
-	@Column()
+	@Column(name="email")
 	private String email;
 //	@Min(value=6, message="Must be a value greater than 1")
 //	@Max(value=10, message="Must be a value lesser than 15")
-	@Column()
+	@Column(name="number_value")
 //    @Pattern(regexp = "^[A-Za-z0-9]{5}", message="Not a valid number")
 //	@Min(value=6, message="Must be a value greater than 1")
 //	@Max(value=15, message="Must be a value lesser than 15")
   	private String numbervalue;
-   
-  
+	
+	public StudentsObjects() {
+		super();
+	}
+
 	/**
 	 * @return the id
 	 */
@@ -129,6 +137,22 @@ public class StudentsObjects {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+	/**
+	 * @return the uniqueId
+	 */
+	public Students getUniqueId() {
+		return uniqueId;
+	}
+
+	/**
+	 * @param uniqueId the uniqueId to set
+	 */
+	public void setUniqueId(Students uniqueId) {
+		this.uniqueId = uniqueId;
+	}
 	
+	  
+
 
 }

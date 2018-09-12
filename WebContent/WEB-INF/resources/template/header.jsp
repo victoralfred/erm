@@ -8,6 +8,8 @@
 <title>${title}</title>
 	<link rel="stylesheet" type="text/css" 
 	href="${pageContext.request.contextPath}/resources/css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" 
+	href="${pageContext.request.contextPath}/resources/css/style.css">
 
 <body>
 	

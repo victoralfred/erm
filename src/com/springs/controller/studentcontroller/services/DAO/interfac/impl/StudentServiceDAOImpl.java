@@ -8,7 +8,7 @@ import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import com.springs.controller.studentcontroller.services.DAO.interfac.StudentsDAO;
-import com.springs.model.StudentsObjects;
+import com.springs.model.students.StudentsObjects;
 
 @Repository
 public class StudentServiceDAOImpl implements StudentsDAO {

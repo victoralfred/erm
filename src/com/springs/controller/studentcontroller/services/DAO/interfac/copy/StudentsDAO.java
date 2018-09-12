@@ -1,4 +1,4 @@
-package com.springs.controller.studentcontroller.services.DAO.interfac;
+package com.springs.controller.studentcontroller.services.DAO.interfac.copy;
 
 import java.util.List;
 

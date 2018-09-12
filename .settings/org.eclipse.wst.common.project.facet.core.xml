@@ -1,10 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<faceted-project>
-  <runtime name="Apache Tomcat v8.5"/>
-  <fixed facet="jst.web"/>
-  <fixed facet="wst.jsdt.web"/>
-  <fixed facet="java"/>
-  <installed facet="java" version="1.8"/>
-  <installed facet="jst.web" version="3.1"/>
-  <installed facet="wst.jsdt.web" version="1.0"/>
-</faceted-project>
+version https://git-lfs.github.com/spec/v1
+oid sha256:6ca87bc0cd5297bbeeb809b3a22dbed86f391c2de305d8a0a4146f6667527eb7
+size 345

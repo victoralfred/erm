@@ -8,5 +8,6 @@
 </head>
 <body>
 <a href="students/">Students</a>
+<a href="new_students_registration/">New Registration</a>
 </body>
 </html>
