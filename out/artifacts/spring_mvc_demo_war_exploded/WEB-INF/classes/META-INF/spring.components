@@ -1,11 +1,14 @@
 #
-#Wed Sep 12 11:49:48 PDT 2018
+#Wed Sep 12 21:56:14 PDT 2018
 com.springs.model.students.Students=javax.persistence.Entity,org.springframework.stereotype.Component
+com.springs.formpreprocessors.registrationController.DAO.RegistrationDAO=org.springframework.stereotype.Component
 com.springs.controller.studentcontroller.StudentBaseController=org.springframework.stereotype.Component
-com.springs.formpreprocessors.registrationController.RegistrationController=org.springframework.stereotype.Component
-com.springs.config.BenDefinitions=org.springframework.stereotype.Component
 com.springs.victor.BaseHome=org.springframework.stereotype.Component
+com.springs.config.BenDefinitions=org.springframework.stereotype.Component
+com.springs.formpreprocessors.registrationController.RegistrationController=org.springframework.stereotype.Component
+com.springs.model.newregistration.NewRegistration=javax.persistence.Entity,org.springframework.stereotype.Component
 com.springs.model.students.StudentsObjects=javax.persistence.Entity,org.springframework.stereotype.Component
 com.springs.controller.studentcontroller.services.DAO.interfac.impl.StudentServiceDAOImpl=org.springframework.stereotype.Component
+com.springs.model.newregistration.RegistrantDetails=javax.persistence.Entity,org.springframework.stereotype.Component
 com.springs.controller.studentcontroller.services.DAO.interfac.StudentsDAO=org.springframework.stereotype.Component
-com.springs.controller.studentcontroller.services.DAO.interfac.copy.StudentsDAO=org.springframework.stereotype.Component
+com.springs.formpreprocessors.registrationController.DAO.impl.RegistrationDAOImpl=org.springframework.stereotype.Component

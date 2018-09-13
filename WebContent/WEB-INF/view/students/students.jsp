@@ -1,4 +1,5 @@
-<%@ include file="/WEB-INF/resources/template/header.jsp" %>
+<%@ include file="/WEB-INF/resources/template/unsecuredheader.jsp" %>
+<%@ include file="/WEB-INF/resources/template/nav/nav.jsp" %>
 <div class="container">
 <div id="registrationForm">
 <%@ include file="registration.jsp" %>

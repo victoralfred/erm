@@ -1,5 +1,6 @@
 <%@ include file="/WEB-INF/resources/template/unsecuredheader.jsp" %>
 <%@ include file="/WEB-INF/resources/template/nav/nav.jsp" %>
+<div class="container">
 
-</body>
-</html>
+        <%@ include file="registrant_details.jsp" %>
+    </div>

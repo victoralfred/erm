@@ -6,8 +6,8 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="/students/">Home</a>
-      <a class="nav-item nav-link" href="/new_students_registration/">Prospective Students</a>
+      <a class="nav-item nav-link" href="/students">Home</a>
+      <a class="nav-item nav-link" href="/new_students_registration">Prospective Students</a>
 
     </div>
   </div>
