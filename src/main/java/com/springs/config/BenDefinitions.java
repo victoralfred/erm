@@ -19,7 +19,7 @@ public class BenDefinitions {
 	 
 	@PostConstruct
 	public void startup() {
-		  
+	    //Rester serberoce	  
 	}
 	
 	@PreDestroy
@@ -31,7 +31,7 @@ public class BenDefinitions {
 	        try {
 	            DriverManager.deregisterDriver(driver);
 	             } catch (SQLException e) {
-	           
+	               // test the server for the server teserr ber
 	            }
 	    }
 	}
